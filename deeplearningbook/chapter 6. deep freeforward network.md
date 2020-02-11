@@ -170,7 +170,7 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
   ### 6.2.2.1 가우스 출력 분포를 위한 선형 단위
 
-  > 선형 출력 단위들로 이루어진 선형 출력층은 주어진 특징 h로 부터 벡터       <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206165905289.png" alt="image-20200206165905289" style="zoom: 50%;" /> 를 산출하고 이런 종류의 출력 단위를 선형단위(linear unit)이라고 부를때가 많다.
+  > 선형 출력 단위들로 이루어진 선형 출력층은 주어진 특징 h로 부터 벡터       $$\hat y=W^Th+b $$를 산출하고 이런 종류의 출력 단위를 선형단위(linear unit)이라고 부를때가 많다.
   >
   > 
 
