@@ -107,11 +107,11 @@ unsupervised learning involves observing several examples of a random vector x a
 
 Many machine learning technologies can be used to perform both tasks. For example,
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200130162048616.png" alt="image-20200130162048616" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74208880-bf027180-4cc8-11ea-8259-28fe4a0202d9.png" alt="image-20200130162048616" style="zoom:67%;" />
 
 Alternatively, we can solve the supervised learning problem of learning     p(y | x) by using traditional unsupervised learning technologies to learn the joint distribution p (x, y), then inferring
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200130162027289.png" alt="image-20200130162027289" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74208900-d04b7e00-4cc8-11ea-9592-fd631fbf0dbc.png" alt="image-20200130162027289" style="zoom:67%;" />
 
 
 
@@ -126,7 +126,7 @@ do not just experience a ﬁxed dataset. there is a feedback loop between the le
 #### <u>design matrix</u>:
 
 $$
-Y=X\beta + \epsilon 
+Y=X\beta + \epsilon
 $$
 
 A design matrix is a matrix containing a diﬀerent example in each row. Each column of the matrix corresponds to a diﬀerent feature. it must be possible to describe each example as a vector, and each of these vectors must be the **same size**.
@@ -139,25 +139,25 @@ A design matrix is a matrix containing a diﬀerent example in each row. Each co
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128174318531.png" alt="image-20200128174318531" style="zoom: 80%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209066-8fa03480-4cc9-11ea-9775-840000e33c53.png" alt="image-20200128174318531" style="zoom:67%;" />
 
 
 
 One way of measuring the performance of the model is to compute the **mean squared error** of the model on the test set.
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128174623693.png" alt="image-20200128174623693" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209073-9a5ac980-4cc9-11ea-834d-ddae417e634f.png" alt="image-20200128174623693" style="zoom:67%;" />
 
 we can also see that
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128174721348.png" alt="image-20200128174721348" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209102-a9417c00-4cc9-11ea-8fcf-4370f45b32dc.png" alt="image-20200128174721348" style="zoom:67%;" />
 
 We need to design an algorithm that will improve the weights w in a way that **reduces MSE test** when the algorithm is allowed to gain experience by observing a training set (X (train), y(train)). To **minimize MSE train, we can simply solve for where its gradient is 0**.
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128175008940.png" alt="image-20200128175008940" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209139-d8f08400-4cc9-11ea-8a33-917fbc5f372d.png" alt="image-20200128175008940" style="zoom:67%;" />
 
-![image-20200128175359066](C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128175359066.png)
+<img src="https://user-images.githubusercontent.com/56706812/74209154-e574dc80-4cc9-11ea-8960-60dd795b558b.png" alt="image-20200128175359066" style="zoom:67%;" />
 
 
 
@@ -179,7 +179,7 @@ In our linear regression example, we trained the model by minimizing the
 
 training error, 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128205934457.png" alt="image-20200128205934457" style="zoom: 67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209169-f6255280-4cc9-11ea-8f29-e48636d56c0c.png" alt="image-20200128205934457" style="zoom:67%;" />
 
 
 
@@ -211,7 +211,7 @@ Models with **insuﬃcient capacity are unable to solve complex tasks**. Models 
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128232115012.png" alt="image-20200128232115012" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209186-063d3200-4cca-11ea-8069-5bebeb7a6c7a.png" alt="image-20200128232115012" style="zoom:67%;" />
 
 
 
@@ -223,7 +223,7 @@ Models with **insuﬃcient capacity are unable to solve complex tasks**. Models 
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200128235045126.png" alt="image-20200128235045126" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209255-5916e980-4cca-11ea-8cda-82b5b1117558.png" alt="image-20200128235045126" style="zoom:67%;" />
 
 
 
@@ -237,7 +237,7 @@ it is possible for the model to have optimal capacity and yet still have a **lar
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200129002249420.png" alt="image-20200129002249420" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209327-9ed3b200-4cca-11ea-8924-c59881fd63f8.png" alt="image-20200129002249420" style="zoom:67%;" />
 
 **Top)** The MSE on the training and test set for two diﬀerent models: a quadratic model, and a model with degree chosen to minimize the test error. Both are ﬁt in closed form. For the quadratic model, **the training error increases as the size of the training set increases.** This is because larger datasets are harder to ﬁt. Simultaneously, the test error decreases, because fewer incorrect hypotheses are consistent with the training data.
 
@@ -259,11 +259,11 @@ our goal is to understand what kinds of distributions are relevant to the “rea
 
 To perform linear regression with **weight decay**, we minimize a sum **J (w)** comprising both the mean squared error on the training and a criterion that expresses a preference for the weights to have smaller squared L^2^ norm.
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200129143704585.png" alt="image-20200129143704585" style="zoom:80%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209343-ac893780-4cca-11ea-85cc-ecd7fd111fcf.png" alt="image-20200129143704585" style="zoom:67%;" />
 
 **Minimizing J(w)** results in a choice of weights that make a tradeoﬀ between ﬁtting the training data and being small. This gives us solutions that have a smaller slope, or that put weight on fewer of the features
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200129144118134.png" alt="image-20200129144118134" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209365-c3c82500-4cca-11ea-9420-cee837815b32.png" alt="image-20200129144118134" style="zoom:67%;" />
 
 More generally, we can regularize a model that learns a function f(x;θ) by **adding a penalty** called a regularizer to the cost function. In the case of weight decay, the regularizer is Ω(w) = w^T^w.
 
