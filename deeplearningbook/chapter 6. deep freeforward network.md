@@ -48,7 +48,7 @@
 
 XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중 정확히 하나가 1과 같으면 XOR 함수는 1을 돌려주고, 그렇지 않으면 0을 돌려준다.
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200205234757350.png" alt="image-20200205234757350" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209787-9b412a80-4ccc-11ea-93b5-072e79320dc4.png" alt="image-20200205234757350" style="zoom:67%;" />
 
 
 
@@ -59,7 +59,7 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 하지만 역전파 알고리즘의 효과가 현실의 문제를 다루기 위해 계층의 수를 늘려갈수록 희미해지는 문제가 생겼다.
 그와 동시에 **SVM(Support Vector Machine), 의사결정나무와 Random Forest** 등의 학습 알고리즘들이 신경망의 대체제로 대두됐다.
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200205235330012.png" alt="image-20200205235330012" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209809-af852780-4ccc-11ea-9f6c-1299885b83de.png" alt="image-20200205235330012" style="zoom:67%;" />
 
 - x~1~=0 일 때는 x~2~ 가 증가함에 따라 모형의 출력도 증가해야 한다.
 - x~1~=1 일 때는 x~2~ 가 증가함에 따라 모형의 출력이 감소해야 한다.
@@ -67,7 +67,7 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206003059945.png" alt="image-20200206003059945" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209830-c0ce3400-4ccc-11ea-9476-a1b7d70b7f35.png" alt="image-20200206003059945" style="zoom:67%;" />
 
 
 
@@ -84,7 +84,7 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
   
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206010513365.png" alt="image-20200206010513365" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209846-d3e10400-4ccc-11ea-83fe-1fd220026fab.png" alt="image-20200206010513365" style="zoom:67%;" />
 
 - 이 함수를 선형변환의 출력에 적용하면 하나의 비선형 변환이 나온다.
 
@@ -92,15 +92,15 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
   
 
-  <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206141445284.png" alt="image-20200206141445284" style="zoom:67%;" />
+  <img src="https://user-images.githubusercontent.com/56706812/74209864-e4917a00-4ccc-11ea-9cc7-b4a475b74cfe.png" alt="image-20200206141445284" style="zoom:67%;" />
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206142253323.png" alt="image-20200206142253323" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209881-f541f000-4ccc-11ea-8aba-b2f537542fbc.png" alt="image-20200206142253323" style="zoom:67%;" />
 
 
 
-![image-20200206141149001](C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206141149001.png)
+<img src="https://user-images.githubusercontent.com/56706812/74209901-01c64880-4ccd-11ea-9644-e470d6fe2815.png" alt="image-20200206141149001" style="zoom:80%;" />
 
 - 선형 모형으로는 0에서 1로 올랐다가 1에서 다시 0으로 떨어지는 함수를 구현할 수 없기 때문에 정류선형 변환(rectified linear transformation)을 적용
 - 실제 상황에서는 데이터가 매우 크기 때문에 이와 같이 해를 바로 도출하는건 힘들 수도 있음.
@@ -125,10 +125,12 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
   ### 6.2.1.1 최대가능도를 이용한 조건부 확률 학습
 
-  <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206154329835.png" alt="image-20200206154329835" style="zoom:67%;" />
+  <img src="https://user-images.githubusercontent.com/56706812/74209916-1276be80-4ccd-11ea-9ab3-56350e4af70d.png" alt="image-20200206154329835" style="zoom:67%;" />
+
+  
 
   > 대부분의 현대적 신경망은 최대가능도를 사용해서 훈련한다. 이는 비용함수가 음의 로그가능도라는 뜻이다.
-
+  
   - 최대가능도의 한 가지 장점은 모형마다 매번 비용함수를 설계하는데 부담이 없다는 것이다. 모형 $\ p(y|x)$만 결정되면 비용함수 $\ logp(y|x)$가 자동으로 결정된다.
   - 비용함수의 기울기는 학습 알고리즘을 잘 지도 할 수 있을 정도로 크고 예측 가능해야 한다. 
   - 활성화 함수가 포화하면 비용함수의 기울기가 아주 작아진다. 그런 현상을 피하는 데 음의 로그 가능도가 도움이 되는 모형이 많다.
@@ -142,13 +144,15 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 ​	 
 ​	 비용함수를 범함수로 간주 할 수 있는데
 
-![image-20200206164028471](C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206164028471.png)
+<img src="https://user-images.githubusercontent.com/56706812/74209940-228e9e00-4ccd-11ea-973c-f14a662e4ba7.png" alt="image-20200206164028471" style="zoom:67%;" />
 
 ​	특정 형태의 함수의 파라미터 구성을 선택하는 것이 아니라 함수 자체를 선택 	하는 것이라고 보면 된다,,,
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206164431398.png" alt="image-20200206164431398" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74209956-2de1c980-4ccd-11ea-82c8-635a6c4b19c8.png" alt="image-20200206164431398" style="zoom:67%;" />
+
+
 
 ​	  이러한 비용함수를 흔히 평균절대오차(mean absolute error)라고 부른다. 안	  타깝게도 평균제곱오차나 평균 절대오차를 기울기 기반 최적화와 함께 사용	  하면 성능이 나쁠때가 많다. 이것이 크로스 엔트로피를 비용함수로 많이 쓰는 	  이유 중 하나이다.
 
@@ -167,8 +171,12 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
   ### 6.2.2.1 가우스 출력 분포를 위한 선형 단위
 
   > 선형 출력 단위들로 이루어진 선형 출력층은 주어진 특징 h로 부터 벡터       <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206165905289.png" alt="image-20200206165905289" style="zoom: 50%;" /> 를 산출하고 이런 종류의 출력 단위를 선형단위(linear unit)이라고 부를때가 많다.
+  >
+  > 
 
-  <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206170947934.png" alt="image-20200206170947934" style="zoom:67%;" />
+  <img src="https://user-images.githubusercontent.com/56706812/74209968-3b974f00-4ccd-11ea-8c58-ea323a8d568e.png" alt="image-20200206170947934" style="zoom:67%;" />
+
+  
 
 - 이 경우 로그가능도를 최대화 하는 것은 평균제곱오차를 최소화 하는 것과 같다.
 
@@ -186,15 +194,21 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
 - output layer가 선형 단위 하나로 이루어진다고 한다. 그 단위 값이 [0,1]에 속하려면 다음과 같이 범위를 한정할 필요가 있다.
 
-  <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206205608616.png" alt="image-20200206205608616" style="zoom:67%;" />
+  
+
+  <img src="https://user-images.githubusercontent.com/56706812/74210000-5f5a9500-4ccd-11ea-90fd-46e7388edf18.png" alt="image-20200206205608616" style="zoom:67%;" />
+
+  
 
 - W^T^h+b  가 단위구간을 벗어날 때마다 모형 출력의 기울기는 0이 된다. 기울기가 0이면 학습 알고리즘이 파라미터가 개선되는 방향을 결정할 수 없기 때문에 훈련에 문제가 생긴다.
 
 - 모형이 잘못된 답을 낼 때마다 항상 강한 기울기를 산출하는 다른 접근 방식이 필요하다.
 
-  <img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206215433019.png" alt="image-20200206215433019" style="zoom:67%;" />
+  <img src="https://user-images.githubusercontent.com/56706812/74210008-6d101a80-4ccd-11ea-8efe-21b4ce73a086.png" alt="image-20200206215433019" style="zoom:67%;" />
 
-  여기서 $\sigma$는 로그 시그모이드 함수이다.
+  
+
+  여기서 $[Math Processing Error]\sigma$는 로그 시그모이드 함수이다.
 
 - z= W^T^h+ b 를 계산한뒤 시그모이드 활성화 함수를 통해 z를 하나의 확률값으로 변환한다.
 
@@ -202,17 +216,21 @@ XOR 함수는 두 이진수 x~1~, x~2~에 대한 연산이다. 두 이진수 중
 
 - 정규화 되지 않은 y와 z에서 선형이라고 가정할 때, 그 로그 확률들을 거듭제곱 하면 정규화 되지 않은 확률들이 나온다. 그 확률들을 적당한 상수로 나누어서 정규화 하면 유효한 확률분포가 나온다.
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206221900928.png" alt="image-20200206221900928" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74210034-89ac5280-4ccd-11ea-9a8e-1a3ec6f921f7.png" alt="image-20200206221900928" style="zoom:67%;" />
+
+
 
 - z변수를 logit이라고 부른다.
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206222526888.png" alt="image-20200206222526888" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74210050-9630ab00-4ccd-11ea-8c03-ac291f870388.png" alt="image-20200206222526888" style="zoom:67%;" />
 
 
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200206223013712.png" alt="image-20200206223013712" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74210064-a6e12100-4ccd-11ea-853c-17e1a0de25a8.png" alt="image-20200206223013712" style="zoom:67%;" />
 
-<img src="C:\Users\hyojung\AppData\Roaming\Typora\typora-user-images\image-20200207003919764.png" alt="image-20200207003919764" style="zoom:67%;" />
+<img src="https://user-images.githubusercontent.com/56706812/74210079-b6606a00-4ccd-11ea-9ce8-ba423ed08024.png" alt="image-20200207003919764" style="zoom:67%;" />
+
+
 
 - z가 극도로 부정확한 경우가 아니라면 소프트플러스 함수의 기울기가 아주 작아지는 일은 없다. 기울기 기반 학습 알고리즘이 잘못된 z 값을 즉시 바로잡는 행동을 보일 것이라는 점에서 이는 유용한 성질이다.
 - 포화가 발생하면 학습에서 유용하지 않을 정도로 기울기가 작아질 수 있다.
